@@ -5,6 +5,7 @@
   padding: 5px 3px;
   width: 100%;
   top: 0px;
+  background-color: white;
 }
 .status-bar__column:first-child span {
   margin-right: 5px;

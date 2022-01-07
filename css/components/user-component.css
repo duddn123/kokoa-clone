@@ -8,7 +8,7 @@
   width: 70px;
   height: 70px;
   border-radius: 27px;
-  margin: 10px 15px;
+  margin: 10px 15px 15px 0px;
 }
 
 .user-component__title {
@@ -18,4 +18,19 @@
 .user-component__subtitle {
   margin-top: 15px;
   opacity: 50%;
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 22px;
 }

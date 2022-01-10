@@ -53,3 +53,7 @@
   display: flex;
   flex-direction: column;
 }
+
+.user-component__text i {
+  color: tomato;
+}

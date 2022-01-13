@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: chattinganimation 0.7s ease-out;
 }
 
 .message-icon {
@@ -118,6 +119,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply input::placeholder {
@@ -149,8 +151,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column button i {
   opacity: 1;
+}
+
+@keyframes chattinganimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.reply .reply__column:first-child,
+.reply .reply__column > i {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .reply__column > i {
+  opacity: 0;
+}
+
+.reply:focus-within .reply__column:first-child {
+}
+
+.reply:focus-within input {
+  width: 90vw;
+  transform: translateX(-10%);
+}
+
+.reply:focus-within button {
+  transform: translateX(5px);
 }

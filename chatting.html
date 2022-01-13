@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatting - Kokoa Talk!</title>
   </head>
-    <div class="status-bar">
+  <body id="chatting-screen">
+    <div class="status-bar chatting-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
@@ -23,21 +24,57 @@
       </div>
     </div>
 
-    <header class="alt-screen-header">
+    <header class="alt-screen-header chatting-header">
       <div class="alt-screen-header__column">
-        <button onclick="history.back()"><i class="fas fa-chevron-left fa-lg"></i> </button>
+        <a href="chat.html">
+          <i class="fas fa-chevron-left fa-lg"></i>
+        </a>
       </div>
       <div class="alt-screen-header__column">
         <h1 class="alt-screen-header__title">KaKao Talk</h1>
       </div>
       <div class="alt-screen-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
+    <main class="main-screen main-chat">
+      <div class="time-stamp">Tuesday, January 13, 2022</div>
 
+      <div class="message-row">
+        <img
+          class="message-icon"
+          src="https://play-lh.googleusercontent.com/KwGCiEolNEeR9Q4RFOnDtb8Pvqs3LNiQEdE07wMCnoULO3yLUprHbGGLBYNEt8k7WJY"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Kakao Talk</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row__own">
+        <div class="message__info">
+          <span class="message__bubble">What's up?</span>
+          <span class="message__time">21:27</span>
+        </div>
+      </div>
     </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up fa-lg"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/acab0da460.js"

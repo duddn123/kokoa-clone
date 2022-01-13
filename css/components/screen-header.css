@@ -22,3 +22,17 @@
 .screen-header__relative {
   position: relative;
 }
+
+@keyframes coganimation {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.screen-header .fa-cog:hover {
+  animation: coganimation 1s linear infinite;
+}

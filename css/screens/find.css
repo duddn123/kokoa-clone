@@ -110,3 +110,17 @@ p:last-child {
   display: flex;
   align-items: center;
 }
+
+@keyframes likeanimation {
+  form {
+    transform: none;
+  }
+
+  to {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.open-chat__column__text .open-chat__like:hover {
+  animation: likeanimation 0.5s ease-in-out forwards;
+}

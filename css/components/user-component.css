@@ -22,6 +22,7 @@
 .user-component__subtitle {
   margin-top: 15px;
   opacity: 50%;
+  font-size: 14px;
 }
 
 .user-component__avatar--xl {
@@ -43,10 +44,6 @@
 .user-component__column--opacity i {
   margin-right: 3px;
   opacity: 40%;
-}
-
-.user-component__subtitle {
-  font-size: 14px;
 }
 
 .user-component__column2 {

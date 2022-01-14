@@ -62,11 +62,11 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-p:nth-child(2) {
+.open-chat__column__text p:nth-child(2) {
   font-size: 13px;
 }
 
-p:last-child {
+.open-chat__column__text p:last-child {
   font-size: 12px;
 }
 .open-chat__column__text p {

@@ -179,9 +179,6 @@
   opacity: 0;
 }
 
-.reply:focus-within .reply__column:first-child {
-}
-
 .reply:focus-within input {
   width: 90vw;
   transform: translateX(-10%);
